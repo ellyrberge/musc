@@ -2,7 +2,7 @@
 
 [Repo Link](https://github.com/ellyrberge/musc)
 
-[Recording Link](usc.zoom.us/rec/s...hX-dND)
+[Recording Link](https://zoom.us/signin?_x_zm_rtaid=ilYnmx6ETMSNZvAo_hepUw.1605649195810.1ad6afcb9e0eca4b3d70757913825e19&_x_zm_rhtaid=898)
 
 
 [![Testing Results](test_results.png "Testing Results")]
