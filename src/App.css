@@ -11,6 +11,9 @@
     font-weight: normal;
     src: local('HK Grotesk SemiBold'), url('./HKGrotesk-SemiBold.woff') format('woff');
 }
+.error-message{
+    color:#E04178;
+}
 
 body {
       font-size: 1rem;
@@ -25,6 +28,29 @@ body {
     padding-bottom: 45%;
 }
 
+.nav-button-playlist{
+    margin-top: -10px;
+    color:white;
+}
+.nav-button-playlist:focus{
+    box-shadow:none;
+}
+input.playlist-title{
+    border-color:transparent;
+}
+.nav-delete-playlist{
+    margin-top: -2px;
+    margin-left:-20px;
+    color:white;
+}
+.nav-delete-playlist:focus{
+    box-shadow:none;
+}
+
+.nav-button-playlist:hover{
+    box-shadow:none;
+    color:#4024CB;
+}
 
 .nav-link{
     color: #fff;
@@ -55,12 +81,295 @@ body {
 
 .logo_image{
     width:30px;
+    height:30px;
 }
 
-.form-control-wrap{
-    background: linear-gradient(#E04178, #598EDE)!important;
-    padding: 1rem;
-    position: relative;
-    padding: 3px;
-    border-radius:.25rem;
+.form-control.add-playlist-input{
+    width:90%!important;
+    height:20%!important;
+    border-color: #E04178;
 }
+.form-control-wrap{
+    margin-top: 5px;
+    background: linear-gradient(#E04178, #598EDE)!important;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 73px;
+    border-radius:.25rem;
+
+}
+
+.form-control{
+    width: 140%!important;
+    height: 50%;
+    font-family: 'HK Grotesk Regular';
+    color:#5C5F83;
+
+}
+
+.modal-close-button{
+    margin-top:-10px;
+}
+.card-img, .card-img-top{
+    border-radius: 2px!important;
+    padding-top: 90px;
+    text-align: center;
+    background: linear-gradient(#E04178, #598EDE)!important;
+    color: #0C1015;
+    font-size: 20px;
+
+}
+.playlist-title{
+    color: #E04178;
+    text-transform: uppercase;
+
+    
+}
+.search-bar-placement{
+    margin-top: 75px;
+}
+.card-img, .card-img-top:hover{
+    border-radius: 2px!important;
+    background: linear-gradient(#E04178, #598EDE)!important;
+    color: #4024CB;
+    font-size: 20px;
+}
+.card-text:hover{
+    text-decoration: none;
+}
+.table_header{
+    color: #5C5F83;
+    font-family:"HK Grotesk Regular";
+    text-transform:uppercase;
+    font-size: 15px;
+
+
+}
+.table_row{
+    color: white;
+    font-family: "HK Grotesk Semibold";
+    font-size: 15px;
+
+}
+/* .table-borderless td,
+.table-borderless th {
+    border: 0;
+} */
+
+.table th,
+ 
+.table td,
+ 
+.table thead th {
+ 
+  border-color: #0C1015
+
+ 
+}
+.result_title_header{
+    color: #0C1015;
+    font-family: "HK Grotesk Regular";
+
+}
+
+.result_title_term{
+    color: #4024CB;
+    font-family: "HK Grotesk Regular";
+    text-transform: uppercase;
+
+}
+.search_button{
+    color:white;
+}
+.search_button:hover{
+    color: #4024CB;
+
+}
+
+.edit_button{
+    color:white;
+    margin-top:-10px;
+}
+.edit_button:hover{
+    color: #4024CB;
+
+}
+
+.title_underline{
+    color:white;
+}
+.title_underline:hover{
+    text-decoration:none;
+    color:#0C1015;
+}
+.card-img, .card-img-bottom, .card-img-top{
+    max-width: 217px;
+    height: 217px;
+
+}
+.card{
+    background: transparent;
+    border:none;
+    width:50%;
+}
+
+.card-track{
+    font-family: 'HK Grotesk Regular';
+    color:#5C5F83;
+    font-size:16px;
+    margin-left:-10px;
+}
+
+.card-artist{
+    font-family: 'HK Grotesk Semibold';
+    color:#fff;
+    font-size:12px;
+    margin-left:-10px;
+}
+.pop-songs-container{
+    margin-left:125px;
+}
+
+.overlay {
+    position: fixed;
+    display: block; 
+    overflow: auto; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 999; 
+    cursor: pointer;
+  }
+  
+  .content {
+        margin: 15% auto;
+        background-color: white;
+        border-radius: 0.25rem;
+        width: 50vw;
+        padding: 2rem;
+        position: relative;
+  }
+  
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-bottom:10px;
+  }
+
+  .add-playlist-submit{
+      margin-left: 710px;
+      background-color:#4024CB;
+      color: white;
+      border-radius: 25px;
+  }
+  .track-buttons{
+      margin-top:20px;
+      margin-left:2px;
+  }
+  .track-submit{
+    
+    margin-right:10px;
+    background-color:#4024CB;
+    color: white;
+    border-radius: 25px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.playlist-title{
+    background:transparent;
+}
+.track-delete{
+    
+    margin-right:10px;
+    background-color:transparent;
+    color: #4024CB;
+    border-color: #4024CB;
+    border-radius: 25px;
+}
+
+.add-playlist-submit:hover{
+    margin-left: 710px;
+    border-color:#4024CB;
+    background-color: transparent;
+    color: #4024CB;
+    border-radius: 25px;
+}
+
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #4024cb;
+    background: -moz-linear-gradient(left, #4024cb 10%, rgba(64,36,203, 0) 42%);
+    background: -webkit-linear-gradient(left, #4024cb 10%, rgba(64,36,203, 0) 42%);
+    background: -o-linear-gradient(left, #4024cb 10%, rgba(64,36,203, 0) 42%);
+    background: -ms-linear-gradient(left, #4024cb 10%, rgba(64,36,203, 0) 42%);
+    background: linear-gradient(to right, #4024cb 10%, rgba(64,36,203, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #4024cb;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #0c1015;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error{
+      color:#E04178;
+      margin-top: 300px;
+      margin-left:40%;
+
+  }

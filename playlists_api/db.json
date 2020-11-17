@@ -1,0 +1,178 @@
+{
+  "playlists": [
+    {
+      "id": 1,
+      "title": "Favorites",
+      "tracks": [
+        {
+          "title": "Rainbow in the Dark",
+          "artist": "Dio",
+          "duration": "401080",
+          "playlistId": "1",
+          "id": 1
+        },
+        {
+          "title": "Paper Planes",
+          "artist": "M.I.A.",
+          "duration": "1254296",
+          "playlistId": "1",
+          "id": 2
+        },
+        {
+          "title": "Rainbow",
+          "artist": "Kacey Musgraves",
+          "duration": "102791",
+          "playlistId": "1",
+          "id": 3
+        },
+        {
+          "title": "rainbow",
+          "artist": "Ke$ha",
+          "duration": "51159",
+          "playlistId": "1",
+          "id": 4
+        },
+        {
+          "title": "Black Rainbow",
+          "artist": "St. Vincent",
+          "duration": "117163",
+          "playlistId": "1",
+          "id": 5
+        },
+        {
+          "title": "Runaway",
+          "artist": "Kanye West",
+          "duration": "402040",
+          "playlistId": "1",
+          "id": 6
+        },
+        {
+          "title": "We Found Love (feat. Calvin Harris)",
+          "artist": "Rihanna",
+          "duration": "820592",
+          "playlistId": "1",
+          "id": 7
+        },
+        {
+          "title": "Rainbow in the Dark",
+          "artist": "Dio",
+          "duration": "401080",
+          "playlistId": "1",
+          "id": 8
+        },
+        {
+          "title": "She's A Rainbow",
+          "artist": "The Rolling Stones",
+          "duration": "324061",
+          "playlistId": "1",
+          "id": 9
+        }
+      ]
+    },
+    {
+      "title": "2020",
+      "tracks": [],
+      "id": 2
+    }
+  ],
+  "tracks": [
+    {
+      "title": "Rainbow in the Dark",
+      "artist": "Dio",
+      "duration": "401080",
+      "playlistId": "1",
+      "id": 1
+    },
+    {
+      "title": "Paper Planes",
+      "artist": "M.I.A.",
+      "duration": "1254296",
+      "playlistId": "1",
+      "id": 2
+    },
+    {
+      "title": "Rainbow",
+      "artist": "Kacey Musgraves",
+      "duration": "102791",
+      "playlistId": "1",
+      "id": 3
+    },
+    {
+      "title": "rainbow",
+      "artist": "Ke$ha",
+      "duration": "51159",
+      "playlistId": "1",
+      "id": 4
+    },
+    {
+      "title": "Black Rainbow",
+      "artist": "St. Vincent",
+      "duration": "117163",
+      "playlistId": "1",
+      "id": 5
+    },
+    {
+      "title": "Runaway",
+      "artist": "Kanye West",
+      "duration": "402040",
+      "playlistId": "1",
+      "id": 6
+    },
+    {
+      "title": "We Found Love (feat. Calvin Harris)",
+      "artist": "Rihanna",
+      "duration": "820592",
+      "playlistId": "1",
+      "id": 7
+    },
+    {
+      "title": "Rainbow in the Dark",
+      "artist": "Dio",
+      "duration": "401080",
+      "playlistId": "1",
+      "id": 8
+    },
+    {
+      "title": "She's A Rainbow",
+      "artist": "The Rolling Stones",
+      "duration": "324061",
+      "playlistId": "1",
+      "id": 9
+    },
+    {
+      "title": "Dog Days Are Over",
+      "artist": "Florence + the Machine",
+      "duration": "1223927",
+      "playlistId": "1",
+      "id": 10
+    },
+    {
+      "title": "Take Me Out",
+      "artist": "Franz Ferdinand",
+      "duration": "1773274",
+      "playlistId": "1",
+      "id": 11
+    },
+    {
+      "title": "Wow.",
+      "artist": "Post Malone",
+      "duration": "261077",
+      "playlistId": "1",
+      "id": 12
+    },
+    {
+      "title": "Dogs",
+      "artist": "Pink Floyd",
+      "duration": "344818",
+      "playlistId": "1",
+      "id": 13
+    },
+    {
+      "title": "wAp (fEAt. mEgAn thEe stAllIOn)",
+      "artist": "Cardi B",
+      "duration": "299107",
+      "playlistId": "1",
+      "id": 14
+    }
+  ]
+}
