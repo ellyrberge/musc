@@ -102,7 +102,7 @@ export default function Table ({fmTracks, addTrack}){
                         let min = Math.floor((ms/1000/60));
                         let sec = Math.floor((ms/1000) % 60);
                         return(
-                                <tr className = "table_row" key={song}> 
+                                <tr className = "table_row" key={`${song.name}/${min}/${sec}`}> 
                                     <td>{song.name}</td>
                                     <td>{song.artist}</td>
                                     <td></td>

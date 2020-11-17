@@ -4,6 +4,12 @@ export async function fetchPlaylists () {
     });
 }
 
+export async function fetchTracks(){
+    return fetch(`/api/tracks`).then((response) => {
+        return response.json();
+    });
+}
+
 export function savePlaylist(data){
     return fetch("/api/playlists", {
         method: "POST",
@@ -41,11 +47,7 @@ export function editPlaylistTitle(data){
     })
 }
 
-export async function fetchTracks(){
-    return fetch(`/api/tracks`).then((response) => {
-        return response.json();
-    });
-}
+
 
 export function deletePlaylist(id) {
     return fetch(`/api/playlists/${id}`, {
