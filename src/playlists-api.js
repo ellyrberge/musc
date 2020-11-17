@@ -1,7 +1,7 @@
 export async function fetchPlaylists () {
     return fetch("/api/playlists").then((response) => {
       return response.json();
-    });
+    })
 }
 
 export async function fetchTracks(){

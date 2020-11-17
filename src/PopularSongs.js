@@ -20,7 +20,7 @@ export default function PopularSongs(){
         <div className = "row mt-5 mb-3 pop-songs-container" data-testid="popSongs">
             {chart.map((song) => {
                 return (
-                    <div className = "col-4" key = {uniqueId()}>
+                    <div className = "col-4" data-testid = "popularSongList" key = {uniqueId()}>
                         <div className="card mb-3" >
                             <a href={song.url} className = "card-text">
                                 <div className="card-img-top album_card" > {song.name}</div>

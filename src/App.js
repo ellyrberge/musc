@@ -75,7 +75,6 @@ function App() {
           return playlists;
         }
       });
-      console.log(updatedPlaylists)
       setPlaylists(updatedPlaylists)
       notifyEdit();
     })
@@ -91,7 +90,7 @@ function App() {
           <main className = "col-11">
             <Switch>
               <Route path="/" exact={true} title = "Musc">
-                <ToastContainer />
+                <ToastContainer data-testid = "notification" />
                 <PopularSongs></PopularSongs>
               </Route>
               <Route path="/playlists/:id/tracks" exact={true} title = "Playlist Tracks">

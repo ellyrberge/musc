@@ -39,9 +39,10 @@ export default function SearchComponent({addTrack}){
                         aria-label="Search"
                         value = {term}
                         onChange = {handleTermChange}
+                        data-test-id = "search-input"
                         ></input>
                     </div>
-                    <button type = "submit" className="btn my-2 my-sm-0 search_button">
+                    <button type = "submit" className="btn my-2 my-sm-0 search_button" data-testid = "search-button">
                         <Search/>
                     </button>
                 </form>

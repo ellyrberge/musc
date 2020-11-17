@@ -57,6 +57,7 @@ export default function Nav({addPlaylist, destroyPlaylist}){
     return(
         <>
         { modalShown && <Modal
+        data-test-id = "modal"
         onClose = {setModalShown}
         status = {modalShown}
         render = {({onClose}) => {
@@ -89,7 +90,7 @@ export default function Nav({addPlaylist, destroyPlaylist}){
         }}
         />}
         <div className = "mt-3 d-flex">
-              <img className= "ml-2 logo_image" src="logo.png" alt="logo"></img><span className="ml-2 logo">musc</span>
+              <img className= "ml-2 logo_image" src="logo.png" alt="logo" data-testid="logo-image"></img><span className="ml-2 logo" data-testid = "brand-title">musc</span>
         </div>
         <nav>
             <NavLink
@@ -98,6 +99,7 @@ export default function Nav({addPlaylist, destroyPlaylist}){
                 activeStyle={{
                     color:"#4024CB"
                 }}
+                data-testid = "home-button"
             >
                 HOME
             </NavLink>
@@ -107,12 +109,13 @@ export default function Nav({addPlaylist, destroyPlaylist}){
                 activeStyle={{
                     color:"#4024CB"
                 }}
+                data-testid = "search-button"
             >
                 SEARCH
             </NavLink>
             <div className = "nav_header d-flex justify-content-between">
-                <div>PLAYLISTS</div>
-                <button className="mr-2 btn nav-button-playlist" onClick={openModal}><Plus/></button>
+                <div data-testid = "playlist-title">PLAYLISTS</div>
+                <button className="mr-2 btn nav-button-playlist" data-testid = "add-playlist-button" onClick={openModal}><Plus/></button>
             </div>
             <div className = "flex-column">
                 {playlists.map((playlist) => {
@@ -128,6 +131,7 @@ export default function Nav({addPlaylist, destroyPlaylist}){
                                 color: "#4024CB"
                             }}
                             value = {playlist.id}
+                            data-testid = "playlist-name"
                         >
                                 {playlist.title}
                             
