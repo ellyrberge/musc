@@ -1,11 +1,11 @@
 export async function fetchPlaylists () {
-    return fetch(`playlists`).then((response) => {
+    return fetch("/api/playlists").then((response) => {
       return response.json();
     });
 }
 
 export function savePlaylist(data){
-    return fetch(`playlists`, {
+    return fetch("/api/playlists", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -17,7 +17,7 @@ export function savePlaylist(data){
 }
 
 export function updatePlaylistTracks(data){
-    return fetch(`/playlists/`+ Number(data.playlistId)+`/tracks`, {
+    return fetch(`/api/playlists/${Number(data.playlistId)}/tracks`, {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -30,7 +30,7 @@ export function updatePlaylistTracks(data){
 
 
 export function editPlaylistTitle(data){
-    return fetch(`/playlists/`+ Number(data.id), {
+    return fetch(`/api/playlists/${Number(data.id)}`, {
         method: "PUT",
         body: JSON.stringify(data),
         headers: {
@@ -42,13 +42,13 @@ export function editPlaylistTitle(data){
 }
 
 export async function fetchTracks(){
-    return fetch(`/tracks`).then((response) => {
+    return fetch(`/api/tracks`).then((response) => {
         return response.json();
     });
 }
 
 export function deletePlaylist(id) {
-    return fetch(`/playlists/${id}`, {
+    return fetch(`/api/playlists/${id}`, {
       method: "DELETE",
     });
 }
