@@ -12,8 +12,6 @@ export default function Playlist({editPlaylist}){
     const [playlistTracks, setPlaylistTracks] = useState([])
     const [playlistTitle, setPlaylistTitle] = useState("")
     const history = useHistory();
-
-
     const {id} = useParams();
 
     useEffect(() => {
@@ -30,7 +28,6 @@ export default function Playlist({editPlaylist}){
     function handleSubmit(event){
         event.preventDefault();
         editPlaylist(playlistById[id], playlistTitle, playlistTracks)
-        setPlaylistTitle(playlistTitle)
         history.push("/");
     }
     return(

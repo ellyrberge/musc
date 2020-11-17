@@ -31,6 +31,7 @@ export default function SearchComponent({addTrack}){
             <> 
             <div className="d-flex justify-content-center search-bar-placement">
                 <form onSubmit = {handleSubmit} className="form-inline mt-3 mr-5 ">
+                    
                     <div className="form-control-wrap">
                         <input 
                         className="form-control pr-1 pl-1 pt-0 pb-0" 

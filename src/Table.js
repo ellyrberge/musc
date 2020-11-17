@@ -64,6 +64,7 @@ export default function Table ({fmTracks, addTrack}){
                     <div>
                       <form onSubmit = {handleSubmit}>
                         <div className="form-group">
+                        <label htmlFor={selectedPlaylistId} className="nav_header">ADD TRACK</label>
                         <select 
                                 className = "form-control add-playlist-input" 
                                 value={selectedPlaylistId} 

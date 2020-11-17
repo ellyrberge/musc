@@ -21,7 +21,7 @@ function App() {
   const [tracks, setTracks] = useState([]);
   const [playlistById, setPlaylistById] = useState()
   const notifyAdd = () => toast("track added to playlist.");
-  const notifyDelete = () => toast("track deleted from playlist.");
+  const notifyDelete = () => toast("playlist deleted.");
   const notifyEdit = () => toast("playlist title edited.");
   const notifyAddPlaylist= () => toast("playlist added.");
 
@@ -72,10 +72,16 @@ function App() {
         if (playlist.id === updatedPlaylist.id) {
           return updatedPlaylist;
         } else {
-          return playlists;
+          return playlist;
         }
       });
+      console.log(updatedPlaylists)
       setPlaylists(updatedPlaylists)
+      const playlistId = {};
+      playlists.forEach((data) => {
+        playlistId[data.id] = data;
+       });
+      setPlaylistById(playlistId);
       notifyEdit();
     })
   }

@@ -70,7 +70,7 @@ export default function Nav({addPlaylist, destroyPlaylist}){
                     <div>
                       <form onSubmit = {handleSubmit}>
                         <div className="form-group">
-                            <label htmlFor="name" className="nav_header">PLAYLIST NAME</label>
+                            <label htmlFor="name" className="nav_header">ADD PLAYLIST</label>
                                 <input
                                     type="text"
                                     value={name}
