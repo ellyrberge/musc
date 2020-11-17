@@ -18,7 +18,7 @@ export default function PopularSongs(){
         return myuniqueidcounter;
     }
     return(
-        <div className = "row mt-5 mb-3 pop-songs-container">
+        <div className = "row mt-5 mb-3 pop-songs-container" data-testid="popSongs">
             {chart.map((song) => {
                 return (
                     <div className = "col-4" key = {uniqueId()}>

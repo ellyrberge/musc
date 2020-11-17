@@ -98,7 +98,7 @@ function App() {
                 <Playlist editPlaylist={editPlaylist} ></Playlist>
               </Route>
               <Route path="/search" exact={true} title = "Search">
-                <SearchComponent addTrack={addTrack}/>
+                <SearchComponent addTrack={addTrack} data-testid ="search"/>
               </Route>
               <Route path="/*" exact={true}>
                 <ErrorPage/>

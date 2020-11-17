@@ -5,7 +5,7 @@ import PopularSongs from "./PopularSongs"
 
 test("PopularSongs displayed", () => {
     const { getAllByTestId } = render(
-        <MemoryRouter initialEntries={["/"]}>
+        <MemoryRouter initialEntries={["/*"]}>
             <PopularSongs></PopularSongs>
         </MemoryRouter>
       );
