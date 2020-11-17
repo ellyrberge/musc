@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {fetchChart} from './music-api';
-import 'react-jinke-music-player/assets/index.css';
 
 
 
